@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--colocando o favicon-->
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>LVL0</title>
+</head>
+
+<body>
+    <h1>principais formatações de textos</h1>
+    <hr>
+    <h2>negrito / destaque</h2>
+    <p>o negrito <b>é feito usando a tag</b> 'b' ou a <strong>tag semantica</strong> 'strong'</p>
+    <h2>italico / enfase</h2>
+    <p>o italico <i>é feito</i> <i>com a tag</i> 'i', ou <em>usando a tag semantica de enfase</em> 'em'</p>
+    <p>o ideal é utilizar <strong>a tag semantica 'strong'</strong> e <em>'em' em HTML e as tags de forma b e i em
+            CSS</em></p>
+    <h2>texto marcado</h2>
+    <p>a marcação de <mark>texto é feito com a tag</mark> 'mark'</p>
+    <h2>texto deletado</h2>
+    <p>podemos marcar um <del>texto como excluido</del>, para indicar que deve ser lido mas não considerado com a tag
+        'del'</p>
+    <h2>texto inserido</h2>
+    <p>podemos marcar um <ins>texto como inserido</ins> para indicar que ele foi adicionado posteriormente, com a tag
+        'ins'</p>
+    <h2>texto sobrescrito</h2>
+    <p>para inserir como x<sup>20</sup>+3, com a tag 'sup'</p>
+    <h2>texto subscrito</h2>
+    <p>para inserir como H<sub>2</sub>O, com a tag 'sub'</p>
+    <h2>códigos fontes</h2>
+    <p>o comando <code>documento.getElementById('teste')</code> é escrito em JavasCript, os caracteres ocupam o mesmo
+        espaço com a tag 'code'</p>
+    <p>para copiar um codigo exatamente como foi escrito, incluindo as identações, se usa a tag 'pre'</p>
+    <h2>citações</h2>
+    <p>SIMPLES: como diria o pai de um amigo: <q>o computador é um burro muito rapido</q>, com a tag 'q'</p>
+    <p>COMPLETAS: segundo jeff noble , no seu licro HTML para leigos:
+    <blockquote>kajsh fkgalkf jlksgnlk djfgksdkfg ksdkfjgskd</blockquote> com a tag 'blockquote'</p>
+    <h2>abreviações</h2>
+    <p>estudando <abbr title="hypertext markup language">HTML</abbr> e <abbr title="cascading style sheets">CSS</abbr>,
+        com a tag 'abbr'</p>
+    <hr>
+    <h1>Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1" start="3">
+        <li>acordar</li>
+        <li>tomar café</li>
+        <li>ligar para fulano</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="square"> <!--disc, circle, square-->
+        <li>acordar</li>
+        <li>tomar café</li>
+        <li>ligar para fulano</li>
+    </ul>
+    <h2>lista de definições</h2>
+    <dl>
+        <p>'dl' cria a lista de definições, 'dt' é a tag para os termos, e 'dd' a descrição deste termo.</p>
+        <dt>HTML</dt>
+        <dd>linguagem de marcação</dd>
+        <dt>CSS</dt>
+        <dd>linguagem para design</dd>
+        <dt>javacript</dt>
+        <dd>linguagem de programação para interatividade</dd>
+    </dl>
+    <hr>
+    <h1>LINKS</h1>
+    <h2>LINKS EXTERNOS</h2>
+    <p>criando um link externo para o <a href="https://rateyourmusic.com/~icaro9293" target="_blank"
+            rel="external">RYM</a>, com a tag 'a', o parametro 'target'= _blank define o alvo para uma janela em branco,
+        e 'rel = external' leva o link para fora do site.</p>
+    <H2>LINKS INTERNOS</H2>
+    <p>link para abrir a <a href="pag02.html" target="_self" rel="next">segunda pagina do site, com ESTILOS
+            EXTERNOS</a>, o arquivo
+        referenciado precisa estar na mesma pasta. 'rel = next' referencia o link como 'proxima' pagina. 'target = self'
+        referencia a propria pagina. </p>
+    <p>caso eu crie uma pagina em outra pasta, preciso informar o local para ancorar, e para voltar para a pagina
+        anterior, o camando '../' antes do nome do arquivo funciona para referenciar que estamos ancorando a uma pagina
+        anterior.</p>
+    <h2>LINKS PARA DOWNLOAD</h2>
+    <ul>
+        <li><a href="imgs/PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO EM PYTHON.pdf" target="_blank">abrir arquivo pdf</a>
+        </li>
+        <li><a href="imgs/PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO EM PYTHON.pdf"
+                download="imgs/PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO EM PYTHON.pdf" type="application/pdf">baixar
+                arquivo
+                pdf</a></li>
+        <p>os media types podem ser encontrados no site https://www.iana.org/assignments/media-types/media-types.xhtml
+        </p>
+        <p>no caso ele baixaria direto se estivesse zipado.</p>
+    </ul>
+
+
+
+    <h1>imagens</h1>
+    <hr><!--cria linha horizontal-->
+    <p>Esse é o primeiro teste.</p>
+    <p>segundo teste outro paragrafo,<br> quebrando a linha com br </p>
+    <!-- SIMBOLOS ESPECIAIS -->
+    <p> &lt;br&gt; <!--faz sinal de maior/menor ou igual-->
+        &reg;
+        &copy;
+        &trade;
+        &euro;
+        &Delta;
+        &uparrow;</p>
+    <p>
+        <!-- EMOJIS (emojipedia.org é uma biblioteca de emojis)-->
+        &#x1F596;
+        &#X1F913;
+    </p>
+
+
+    <h2>testando a carga e imagens</h2>
+    <p>abaixo tera uma imagem</p>
+    <img src="html-logo200.png" alt="logo HTML5">
+    <p>carregando dentro de uma sub-pasta</p>
+    <img src="imgs/css-logo200.png" alt="logo CSS3">
+    <p>carregando imagens externas utilizando URL</p>
+    <img src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-4.png" alt="logo javascript">
+
+    <h2>IMAGENS DINAMICAS</h2>
+    <p>as imagens servem para diferentes dispositivos de tamanhos diferentes, através das tags 'source media type' e
+        'picture'.</p>
+    <picture>
+        <p>a tag img é o padrao, caso caia na condição da tag 'source', ela passara a ser executada, no caso, caso seja
+            menor do que 1000px, é carregado a imagem M, menor que 700px é carregado a P, e maior q isso a imagem padrão
+            G. A ordem dos 'source' importam, tem q ser do menor para o maior.</p>
+        <source media="(max-width: 700px)" srcset="imgs/foto-P.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imgs/foto-M.png" type="image/png">
+        <img src="imgs/foto-G.png" alt="imagem flexivel">
+    </picture>
+    <hr>
+    <h1>AUDIOS</h1>
+    <p>para reprodução de audios é usada as tags 'audio', e parametros 'controls' </p>
+    <p>suporta MP3, WAV E OGG</p>
+    <audio src="midia/Amazing.mp3" controls autoplay></audio>
+    <p>utilizando a tag 'audio', e a tag 'source' da msm forma das imagens dinamicas, o que é colocado é source é
+        reproduzido caso necessario em ordem.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/Amazing.mp3" type="audio/mpeg">
+        <p>caso não seja reproduzido o arquivo selecionado, esta informação sera mostrada, posso colocar varios sources
+            de formatos diferentes, cada um deles tentara ser reproduzido.</p>
+    </audio>
+    <hr>
+    <h1>VIDEOS</h1>
+    <p>colocando arquivos MP4 usando a tag mais simples 'video' e parametro 'width' e 'controls'(é recomendavel upar
+        utilizando o source assim como nas outras midias e colocar diversos formatos(MP4,MKV,WEBV) para ter certeza que
+        o site sera compativel com diversos navegadores e dispositivos.)</p>
+    <video src="midia/ego.mp4" width="500" controls></video>
+    <p>utilizando a tag 'video' e 'source' (recomendado, assim como nas outras midias). O parametro 'poster' coloca uma
+        thumbnail no video. O problema deste método é a quandidade de banda consumida para hospedar os arquivos de video
+        no servidor LOCAL, acaba saindo muito caro.</p>
+    <video controls width="500" height="500">
+        <source src="midia/00f5b771.mp4" type="video/mp4">
+        <source src="midia/Ego-convertidoWEB.mp4" type="video/mp4">
+    </video>
+    <p>utilizando video do próprio youtube. Basta ir no video e clicar em compartilhar e em seguida 'incorporar' que
+        gera um código HTML.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+
+    <h1>CSS</h1>
+    <h2>estilos inline (NÃO RECOMENDADO)</h2>
+    <p style="background-color: rgb(114, 197, 225); color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Tempora magnam repudiandae maxime placeat voluptate, sit numquam nostrum! Architecto ratione commodi
+        consequatur! Quia neque natus doloribus illum omnis velit sit blanditiis?</p>
+    <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur eum
+        velit architecto aut, unde dignissimos eligendi recusandae mollitia illo fugiat tempore? Exercitationem ullam
+        dolorum delectus voluptatem quia quod totam.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur perspiciatis quia aliquid soluta qui laboriosam excepturi, veniam amet natus perferendis est error
+        velit vero delectus modi porro quae corrupti cumque.</p>
+
+    <h2>estilos internos (utilizando seletores {})</h2>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic magni sint voluptas tempora praesentium magnam, eum
+        culpa eius eligendi debitis nihil provident. Sequi pariatur quos dolore excepturi ipsam magni nesciunt! Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Libero neque culpa est? Cupiditate architecto voluptatibus id
+        repellat temporibus qui perspiciatis, facilis sed sunt enim voluptates omnis vero suscipit eaque. Laudantium!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam amet ullam cumque consectetur
+        mollitia sequi eveniet suscipit? Omnis distinctio labore neque voluptatem mollitia assumenda tenetur sapiente
+        aliquid voluptas nobis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda esse nemo officiis eum omnis! Nam, dicta?
+        Excepturi modi ea repudiandae repellendus, omnis culpa exercitationem quisquam quae in, atque, temporibus
+        laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dolorem adipisci, atque quaerat nam
+        recusandae magnam vitae reiciendis, distinctio pariatur minima molestiae officia consequuntur ab explicabo?
+        Iusto sit autem quasi?</p>
+
+    <h2>ESTILOS EXTERNOS <a href="pag02.html" target="_self">(NA PAGINA 2), com a tag 'link' em cada pagina que for
+            utilizada, a partir de um arquivo de estilo css.</a></h2>
+</body>
+
+</html>

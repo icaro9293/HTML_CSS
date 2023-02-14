@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+/*fonta obtida no googlefonts, 'dafonts' é uma opção tbm.*/
+
+/*exemplo importação de fonte - 'Babylonica'*/
+body {
+    background-image: linear-gradient(to bottom, #0310AD, #1E2FFA, #57FA05);
+    font: italic normal 1em 'Times New Roman', Times, Serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* em é o tamanho em relação a altura do M maiusculo de determinada fonte. Normalmente 16px = 1em */
+    /* font-size: 1em; */
+    /* font-weight: normal; */
+    /* font-style: italic; é possivel fazer estas 4 configurações de fonte (style -> weight -> size -> family) em uma unica linha. */
+
+
+}
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    /*deixa as bordas arredondadas*/
+    box-shadow: 10px 10px 15px #01052c98;
+    /*1o é para a horizontal, 2o é para vertical, 3o é efeito de blur ou espalhamento, 4 a cor*/
+    width: 600px;
+    /*largura*/
+    padding: 10px;
+    /*borda(tem top, right, bottom, left) SENTIDO HORARIO*/
+    margin: auto;
+    /*margin(tem top, right, bottom, left) SENTIDO HORARIO, auto - deixa o conteudo sempre no meio da tela*/
+}
+
+h1 {
+    font: italic normal 3em Babylonica;
+    color: #3AAD00;
+    text-align: center;
+    text-shadow: 1px 1px 1px #0207418d;
+
+}
+
+h2 {
+    color: #57FA05;
+}
+
+h2#primario {
+    /*o id é quando apenas ESTE h2 ira ter estas caracteristicas*/
+    color: #1E2FFA;
+}
+
+p {
+    text-align: justify;
+    /* text-decoration: underline; */
+}
+
+.paragrafo {
+    /*classes são para quando multiplos elementos que terão estas caracteristicas varias vezes durante o programa*/
+    text-align: justify;
+    text-indent: 40px;
+    text-decoration: underline;
+}
+
+.paragrafo2 {
+    text-align: justify;
+    font-weight: bold;
+}
+
+div {
+    background-color: gray;
+    border: 1px solid black;
+    /*width -> style -> cor*/
+    height: 200px;
+    width: 195px;
+    text-align: center;
+    display: inline-block;
+    /*para mostrar na mesma linha - o 'div' é um block(ocupa uma linha inteira cada elemento,) e este comando display transforma em inline, colocando todos os elementos div na mesma linha.*/
+    margin: auto;
+}
+
+div:hover {
+    /*: representa uma pseudo-classe*/
+    background-color: #0310AD;
+}
+
+nav {
+    background-color: aqua;
+    border-radius: 20px;
+    padding-left: 20px;
+    box-shadow: 12px 9px 15px 4px rgba(0, 0, 0, 0.393);
+}
+
+nav>a {
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+article {
+    background-color: lightgray;
+    padding-left: 5px;
+}
+
+article>aside {
+    background-color: grey;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
