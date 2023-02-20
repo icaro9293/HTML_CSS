@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Passion+One&display=swap'); /*importei as duas fontes de uma vez*/
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Passion+One&display=swap');
+/*importei as duas fontes de uma vez*/
 
-:root { /*criando variaveis.*/
+:root {
+    /*criando variaveis.*/
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Metal Mania', cursive;
     --fonte3: 'Passion One', cursive;
@@ -15,7 +17,8 @@
     font-size: 1em;
 }
 
-html, body {
+html,
+body {
     font-family: var(--fonte1);
     min-height: 100vh;
     background-color: grey;
@@ -27,14 +30,15 @@ header {
     text-align: center;
 }
 
-header > h1 {
+header>h1 {
     font-family: var(--fonte2);
     font-size: 8vw;
     padding-top: 50px;
-    font-variant: small-caps; /*deixa capitalizado*/
+    font-variant: small-caps;
+    /*deixa capitalizado*/
 }
 
-header > p {
+header>p {
     padding-bottom: 50px;
 }
 
@@ -64,7 +68,7 @@ section {
     padding-left: 30px;
 }
 
-section > p {
+section>p {
     padding-bottom: 2em;
 }
 
@@ -76,28 +80,30 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 50, 50);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px black; /*inset é uma sobra interna.*/
+    box-shadow: inset 6px 6px 13px 0px black;
+    /*inset é uma sobra interna.*/
     background-size: cover;
     background-position: right center;
     background-attachment: fixed;
 
 }
 
-section.imagem > p {
+section.imagem>p {
     background-color: rgba(0, 0, 0, 0.607);
-    display: inline-block; /*ao inves de definir um tamanho da largura da caixa, é melhor dar este display como inline block para que ele se adapte ao tamanho do conteudo.*/
+    display: inline-block;
+    /*ao inves de definir um tamanho da largura da caixa, é melhor dar este display como inline block para que ele se adapte ao tamanho do conteudo.*/
     padding: 5px;
     text-shadow: 2px 2px 0px black;
 }
 
 section#img01 {
     background-image: url('../imagens/background001.jpg');
-    
-    
+
+
 }
 
 section#img02 {
     background-image: url('../imagens/background002.jpg');
-    
-    
+
+
 }
