@@ -5,104 +5,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto-módulo3</title>
-    <link rel="stylesheet" href="estilo/style.css">
+    <title>tabelas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Cordel Moderno</h1>
-        <p>
-            Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Milton Duarte</a>
-        </p>
-    </header>
+    <h1>TESTE TABELAS SIMPLES</h1>
+    <table>
+        <tr> <!--table row-->
+            <td>A1</td> <!--table data-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
 
-    <section class="normal">
-        <p>
-            Estou ficando cansado <br>
-            Da tal tecnologia <br>
-            Só se fala por e-mail <br>
-            Mensagem curta e fria <br>
-            Twitter e Facebook <br>
-            Antes que eu caduque <br>
-            Vou dizer tudo em poesia.
-        </p>
-    </section>
+    <h1>TESTE TABELAS GRANDES</h1>
+    <p>'rowspan' e 'colspan' são usados para preencher as linhas e colunas da forma desejada. 'colgroup''rowgroup' é quando preenche varios itens , normalmente quando tem span acima de 1</p>
+    <div id="container"> <!--esta div pode ser criada para poder configurar o scroll e responsividade da tabela.-->
+        <table>
+            <caption>População das unidades federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="numero">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="numero">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="numero">14.873.064</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="numero">11.433.957</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="numero">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="numero">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="numero">14.873.064</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="numero">11.433.957</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="numero">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="numero">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="numero">14.873.064</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="numero">11.433.957</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="numero"><strong>210.147.125</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <h1>desafio 1</h1>
+    <table>
+        <colgroup> <!--para usar configuração para coluna inteira-->
+            <col class="cgrupo">
+            <col class="cnome">
+            <col class="cfilme" span="3"> <!--span para expandir em todo o 'colgroup'-->
+        </colgroup>
+        <caption>filmes</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th> 
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>ana maria</td>
+                <td>alien</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>beatriz souza</td>
+                <td>hulk</td>
+                <td>inception</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>claudia melo</td>
+                <td>oblivion</td>
+                <td>matrix</td>
+                <td>joker</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>clone</td>
+                <td>alien</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>lion</td>
+                <td>alien 2</td>
+                <td>rambo 4</td>
+                <td>vingadores ultron</td>
+            </tr>
+            <tr>
+                <td>dick</td>
+                <td>intocaveis</td>
+                <td>amnesia</td>
+                <td>gladiador</td>
+            </tr>
+
+        </tbody>
+
+    
 
 
-    <section class="imagem" id="img01">
-        <p>
-            Não é mais como era antes <br>
-            É tudo abreviado <br>
-            "Você" só tem duas letras <br>
-            O "O" e o "E" foi riscado <br>
-            Para declarar o amor <br>
-            Basta botar uma flor <br>
-            E um coração desenhado.
-        </p>
-    </section>
 
-
-    <section class="normal">
-        <p>
-            Arroba agora não pesa <br>
-            É parte de um endereço <br>
-            Ponto final nem se usa <br>
-            Ou vai até no começo <br>
-            Agora é .com <br>
-            Se o saite é muito bom <br>
-            Ele vale um alto preço.
-        </p>
-
-        <p>
-            Pra piorar a liguagem <br>
-            O emoticom é um risco <br>
-            Tem símbolo para tudo <br>
-            Ponto e vírgula e um asterisco <br>
-            Um beijo significa <br>
-            Pra entender como fica <br>
-            Decifre esse rabisco.
-        </p>
-    </section>
-
-
-    <section class="imagem" id="img02">
-        <p>
-            Tenho saudade das cartas <br>
-            Escritas com a própria mão <br>
-            Mandava no mês de Junho <br>
-            Só chegava no Verão <br>
-            Mas matava a saudade <br>
-            Era texto de verdade <br>
-            Nas linhas do coração.
-        </p>
-    </section>
-
-    <section class="normal">
-        <p>
-            Agora, escrevo e envio <br>
-            Chegando na mesma hora <br>
-            Mas quando vou prosear <br>
-            A pessoa foi embora <br>
-            Abriu outro aplicativo <br>
-            O mundo ficou cativo <br>
-            Da tecnologia do agora.
-        </p>
-
-        <p>
-            Felizmente, pra orar <br>
-            Não precisa de internet <br>
-            Deus escuta todo mundo <br>
-            Se quiser, faça esse teste <br>
-            Dois pontos são dois joelhos <br>
-            Seus lábios são aparelhos <br>
-            Deixe que Deus interprete.
-        </p>
-    </section>
-
-    <footer>
-        <p>site guanabara módulo3</p>
-    </footer>
 </body>
 
 </html>
