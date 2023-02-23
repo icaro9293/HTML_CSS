@@ -5,11 +5,13 @@
 table {
     width: 400px;
     /* height: 400px; */
-    border-collapse: collapse; /*junta as linhas da border, o padrao é 'separate*/
+    border-collapse: collapse;
+    /*junta as linhas da border, o padrao é 'separate*/
     position: relative;
 }
 
-thead > tr > th { /*prender o cabeçalho no scroll.*/
+thead>tr>th {
+    /*prender o cabeçalho no scroll.*/
     position: sticky;
     top: 0px;
     background-color: lightcoral;
@@ -22,18 +24,23 @@ caption {
     padding: 10px;
 }
 
-td, th {
+td,
+th {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
     vertical-align: top;
 }
 
-tbody > tr:nth-child(odd) /*efeito zebrado*/{
+tbody>tr:nth-child(odd)
+
+/*efeito zebrado*/
+    {
     background-color: grey;
 }
 
-thead, tfoot {
+thead,
+tfoot {
     background-color: lightcoral;
 }
 
@@ -42,14 +49,17 @@ thead, tfoot {
     vertical-align: middle;
 }
 
-col.cnome { /*melhor forma de configurar coluna inteira.*/
+col.cnome {
+    /*melhor forma de configurar coluna inteira.*/
     background-color: yellow;
 }
 
-col.cfilme { /*melhor forma de configurar coluna inteira.*/
+col.cfilme {
+    /*melhor forma de configurar coluna inteira.*/
     background-color: aqua;
 }
 
-div#container { /*deixa a tabela responsiva ao tamanho da janela, rolando apenas a tabela e não a janela inteira*/
+div#container {
+    /*deixa a tabela responsiva ao tamanho da janela, rolando apenas a tabela e não a janela inteira*/
     overflow-x: auto;
 }
