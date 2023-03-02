@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>teste01</h1>
+    <form action="cadastro.php" autocomplete="off" method="get">
+        <p><label for="inome">nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"> </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <h1>teste 02</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>teste formularios</legend>
+            <p>
+                <label for="iuser"> Usuario: </label>
+                <input type="text" name="user" id="iuser" required size="10" placeholder="login/email">
+            </p>
+            <p>
+                <label for="isenha"> Senha: </label>
+                <input type="password" name="senha" id="isenha" required minlength="4" maxlength="6">
+            </p>
+            <p>
+                <label for="imedia"> Média: </label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5"
+                    value="5">
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo </label>
+                <input type="month" name="mes" id="imes">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" placeholder="regEx é o essencial">
+            </p>
+
+            <p>
+                <input type="checkbox" name="bas" id="ibas">
+                <label for="ibas">basquete</label>
+                <input type="checkbox" name="fut" id="ifut" checked>
+                <label for="ifut">futebol</label>
+                <input type="checkbox" name="nat" id="inat">
+                <label for="inat">natação</label>
+                <input type="checkbox" name="ten" id="iten">
+                <label for="iten">tenis</label>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isxmas" checked>
+                <label for="isxmas">Masculino</label>
+                <br>
+                <input type="radio" name="sexo" id="isxfem">
+                <label for="isxfem">Feminino</label>
+            <p>utilizando o tipo 'radio' tem que usar o nome nome para que apenas uma das opções sejam selecionadas.
+            </p>
+            </p>
+
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor">
+            </p>
+
+            <p>
+            <p>numero correspondente a barra de range feito com javascript.</p>
+            <label for="inivel">Nível de satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="5"
+                oninput="ival.innerHTML = Number(inivel.value)">
+            <output id="ival">5</output>
+            </p>
+
+            <p>
+                <label for="ifile">Foto: </label>
+                <input type="file" name="file" id="ifile">
+            </p>
+
+            <p>
+                <label for="iest">Estado: </label>
+                <select name="estado" id="iest">
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São paulo</option>
+                        <option value="RJ">Rio de janeiro</option>
+                        <option value="MG">Minas gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imsg">Mensagem: </label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <p>isto foi feito com Javascript</p>
+            <p>
+                <label for="in1">Numero 1: </label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required
+                    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Numero 2: </label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required
+                    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">>
+            </p>
+            <p>
+                <label for="isoma">Soma: </label>
+                <output name="soma" id="isoma">
+                    0
+                </output>
+            </p>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+
+    </form>
+</body>
+
+</html>
